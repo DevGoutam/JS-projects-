@@ -1,0 +1,38 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Mozilla+Headline:wght@200..700&display=swap');
+@import "tailwindcss";
+
+
+@theme {
+  --font-Mozilla: "Mozilla Headline", sans-serif;
+}
+
+
+.my-list {
+  @apply w-[calc(100%/7)] cursor-pointer mt-[30px];
+}
+@layer components {
+
+.active::before{
+  content:"";
+  @apply  bg-amber-600;
+}
+
+
+  .back {
+    @apply relative z-0;
+  }
+.inactive-back{
+  @apply  text-gray-500
+}
+
+  .back::before {
+    content: "";
+    @apply absolute -z-10  h-10 w-10 top-1/2 left-1/2 
+           -translate-x-1/2 -translate-y-1/2 rounded-full transition-all duration-200;
+  }
+
+  .back:hover::before {
+    @apply bg-indigo-400;
+  }
+}

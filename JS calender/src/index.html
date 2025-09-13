@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>calender</title>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="output.css" />
+  </head>
+  <body
+    class="relative bg-gray-700 text-white flex justify-center flex-col items-center min-h-[100vh]"
+  >
+  <div class="relative">
+    <!-- <h1 class="text-2xl font-Mozilla">This is Cool text budy!</h1> -->
+    <div class=" wrapper  bg-radial-[at_25%_25%] from-gray-600 to-gray-700 to-75% w-[450px] rounded-xl">
+      <header
+        class="flex items-center justify-between px-[25px] pt-[30px] pb-[10px]"
+      >
+      <!-- //date -->
+        <p class="  current-date text-[1.45rem] font-bold"></p>
+    
+      </header>
+      <!-- calender -->
+      <div class="">
+        <!-- weeks -->
+        <ul class=" hide flex flex-wrap text-center font-bold">
+          <li class=" w-[calc(100%/7)]">Sun</li>
+          <li class=" w-[calc(100%/7)]">Mon</li>
+          <li class=" w-[calc(100%/7)]">Tue</li>
+          <li class=" w-[calc(100%/7)]">Wed</li>
+          <li class=" w-[calc(100%/7)]">Thu</li>
+          <li class=" w-[calc(100%/7)]">Fri</li>
+          <li class=" w-[calc(100%/7)]">Sat</li>
+        </ul>
+        <!-- days -->
+        <ul class="flex flex-wrap text-center mb-[20px] days">
+        </ul>
+      </div>
+    </div>
+           <!-- icons -->
+        <div   class=" absolute right-[-20px] top-[50%] io flex text-white gap-[460px]">
+          <!-- material-symbols-rounded  -->
+          <span
+          id="prev"
+            data-feather="chevron-left"
+            class="  span h-[28px] w-[28px] my-[1px] cursor-pointer text-center leading-[38px] rounded-full text-[1.9rem] hover:bg-indigo-400 transition-all duration-200"
+
+          ></span>
+          <span
+          id="next"
+            data-feather="chevron-right"
+            class="  span h-[28px] w-[28px] my-[1px] cursor-pointer text-center leading-[38px] rounded-full  mr-[-10px] text-[1.9rem] hover:bg-indigo-400 transition-all duration-200"
+          >
+          </span>
+        </div>
+
+        </div>
+    <script>
+      feather.replace();
+    </script>
+
+<script src="index.js" defer></script>
+  </body>
+</html>
+
+
+   <!-- <li class=" inactive-back my-list">27</li>
+          <li class=" inactive-back my-list">28</li>
+          <li class=" inactive-back my-list">29</li>
+          <li class=" inactive-back my-list">30</li>
+          <li class=" inactive-back my-list">31</li>
+          <li class=" back my-list">1</li>
+          <li class=" back my-list">2</li>
+          <li class=" back my-list">3</li>
+          <li class=" back my-list">4</li>
+          <li class=" back my-list">5</li>
+          <li class=" back my-list">6</li>
+          <li class=" back my-list">7</li>
+          <li class=" back my-list">8</li>
+          <li class=" back my-list">9</li>
+          <li class=" back my-list">10</li>
+          <li class=" back my-list">11</li>
+          <li class=" back before:content-[''] before:bg-gray-600 before:opacity-100 my-list">12</li>
+          <li class=" back my-list">13</li>
+          <li class=" back my-list">14</li>
+          <li class=" back my-list">15</li>
+          <li class=" back my-list">16</li>
+          <li class=" back my-list">17</li>
+          <li class=" back my-list">18</li>
+          <li class=" back my-list">19</li>
+          <li class=" back my-list">20</li>
+          <li class=" back my-list">21</li>
+          <li class=" back my-list">22</li>
+          <li class=" back my-list">23</li>
+          <li class=" back my-list">24</li>
+          <li class=" back my-list">25</li>
+          <li class=" back my-list">26</li>
+          <li class=" back my-list">27</li>
+          <li class=" back my-list">28</li>
+          <li class=" back my-list">29</li>
+          <li class=" back my-list">30</li>
+          <li class=" back my-list">31</li>
+          <li class=" inactive-back my-list">1</li> 
+          <li class=" inactive-back my-list">2</li> 
+          <li class=" inactive-back my-list">3</li> 
+          <li class=" inactive-back my-list">4</li> 
+          <li class=" inactive-back my-list">5</li> 
+          <li class=" inactive-back my-list">6</li>  -->

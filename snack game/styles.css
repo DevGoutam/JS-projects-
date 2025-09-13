@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+canvas {
+  opacity: 88%;
+}
+body{
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+  font-family: "Protest Revolution", sans-serif;
+}
+
+div.container{
+    width: 100%;
+    height: 100%;
+
+    background: url("./img/bg.jpeg");    background-size: cover; 
+     background-repeat: no-repeat;
+    background-position: center;
+} 
+
+    .error{
+        animation: shake 0.1s linear 10 ;
+    }
+
+    @keyframes shake {
+        0%{
+            transform:  translateX(0);
+        }
+        25%{
+            transform:  translateX(-5px);
+        }
+        0%{
+            transform:  translateX(0);
+        }
+        0%{
+            transform:  translateX(5px);
+        }
+        0%{
+            transform:  translateX(0);
+        }
+      }
