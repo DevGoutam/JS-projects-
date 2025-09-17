@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+/* Here I am defining custom properties */
+@theme{
+    --color-abcd-01: #BB9873;
+    --font-abcdFont:  "Bebas Neue", sans-serif;
+}
+ /* #custom color  */
+   /*------------ you have to use like this -----------*/
+              /* class " text-abcd-01" */
+              /* class " bg-abcd-01" */
+
+
