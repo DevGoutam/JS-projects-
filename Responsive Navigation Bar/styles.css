@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    min-height: 100vh;
+    background-image: url(ghhh.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+      font-family: "Roboto", sans-serif;
+}
+
+nav{
+    background-color: #361520bb;
+    box-shadow: 3px 3px 5px  rgb(121, 77, 77);
+}
+
+nav ul{
+     width: 100%;
+     list-style: none;
+     display: flex;
+     justify-content: flex-end;
+     align-items: center;
+
+    
+
+}
+
+nav li{
+    height: 50px;
+
+}
+
+nav a{
+    height:100% ;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ color: white;
+ transition: all 0.2s linear;
+}
+
+
+nav a:hover{
+    background-color: antiquewhite;
+    color: #361520;
+}
+
+nav li:first-child{
+    margin-right: auto;
+    
+}
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color:rgba(43, 11, 11, 0.37);
+    color: white;
+    box-shadow: -10px 0 10px rgba(66, 39, 39, 0.164);
+    backdrop-filter: blur(10px);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar li{
+    width: 100%;
+  
+}
+
+.sidebar a{
+    width: 100%;
+    display: flex;
+    justify-content:flex-start ;
+}
+
+div.img{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    padding-right: 20px;
+    padding-left: 20px;
+    cursor: pointer;
+
+    
+}
+
+.cross{
+    padding: 10px 5px;
+ /* margin-left: auto; */
+    left: 0;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 750px) {
+.hideOnMobile {
+    display: none;
+}
+div.img{
+    display:flex ;
+}
+
+}
+@media screen and (max-width: 400px) {
+.sidebar{
+    width: 100%;
+}
+
+}

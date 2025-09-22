@@ -51,7 +51,7 @@ snackBody[i] = snackBody[i-1];
 }
 if(snackBody.length){
     snackBody[0]=[snakeX,snakeY];
-}
+}    
 
 // game over conditions
 if (snakeX < 0 || snakeX >= cols * boxSize || snakeY < 0 || snakeY >= rows * boxSize) {
@@ -60,7 +60,7 @@ if (snakeX < 0 || snakeX >= cols * boxSize || snakeY < 0 || snakeY >= rows * box
 playGameOver();
 }
 
-    for (let i = 1; i < snackBody.length; i++) {
+    for (let i = 3; i < snackBody.length; i++) {
         if (snakeX == snackBody[i][0] && snakeY == snackBody[i][1]) {
             gameOver = true;
             playGameOver();

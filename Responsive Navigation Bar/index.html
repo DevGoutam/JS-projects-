@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Responsive Navbar</title>
+  </head>
+  <body>
+    <nav>
+      <ul class="sidebar">
+        <div onclick="closeSIdebar()" class="cross">
+          <img
+            src="arrow_menu_close_27dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg"
+            alt=""
+          />
+        </div>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Forum</a></li>
+        <li><a href="#">Login</a></li>
+      </ul>
+      <ul>
+        <li ><a href="#">Kush</a></li>
+        <li class="hideOnMobile"><a href="#">Blog</a></li>
+        <li class="hideOnMobile"><a href="#">Products</a></li>
+        <li class="hideOnMobile"><a href="#">About</a></li>
+        <li class="hideOnMobile"><a href="#">Forum</a></li>
+        <li class="hideOnMobile"><a href="#">Login</a></li>
+
+        <div class="img" onclick="showSidebar()">
+          <img
+            src="arrow_menu_open_27dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg"
+            alt=""
+          />
+        </div>
+      </ul>
+    </nav>
+
+    <script>
+      const sidebar = document.querySelector(".sidebar");
+      function showSidebar() {
+        sidebar.style.display = "flex";
+      }
+      function closeSIdebar() {
+        sidebar.style.display = "none";
+      }
+    </script>
+  </body>
+</html>
